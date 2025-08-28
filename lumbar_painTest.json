@@ -1,0 +1,147 @@
+{
+  "formData": {
+    "formTitle": "lumbar",
+    "selectedOption": "spine"
+  },
+  "stages": [
+    {
+      "header": "Stage 1",
+      "steps": [
+        {
+          "selectedOption": "video_step",
+          "description": "Perform the movement as shown in the video. Then describe your sensations or feelings.",
+          "imageUrl": "https://images.pexels.com/photos/31515057/pexels-photo-31515057.jpeg",
+          "buttonText": "",
+          "popupText": "",
+          "choices": [],
+          "videoUrls": {
+            "pl-PL": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4",
+            "fr-FR": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4",
+            "en-EN": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4"
+          }
+        },
+        {
+          "selectedOption": "wheel_step",
+          "description": "",
+          "imageUrl": "",
+          "buttonText": "Click if you have difficulty straightening up after bending over",
+          "popupText": "",
+          "choices": [],
+          "videoUrls": {},
+          "buttonGoal": null,
+          "upToTwoGoal": 6,
+          "atLeastThreeGoal": null,
+          "wheelName": "forwardLumbarWheelName"
+        },
+        {
+          "selectedOption": "pain_choice_step",
+          "description": "During this test movement, on which side do you experience more pain or discomfort?",
+          "imageUrl": "https://images.pexels.com/photos/31515057/pexels-photo-31515057.jpeg",
+          "buttonText": "",
+          "popupText": "",
+          "choices": [
+            {
+              "text": "Mild tension on the left side",
+              "goal": 5,
+              "possibleChoice": "Left"
+            },
+            {
+              "text": "Sharp discomfort on the right side",
+              "goal": 5,
+              "possibleChoice": "Right"
+            },
+            {
+              "text": "Even pressure across both sides",
+              "goal": 5,
+              "possibleChoice": "Both"
+            }
+          ],
+          "videoUrls": {},
+          "fieldName": "forwardLumbarChoice"
+        },
+        {
+          "selectedOption": "pain_choice_step",
+          "description": "Did you experience radiating pain to the buttock or leg(s) at the same time?",
+          "imageUrl": "https://images.pexels.com/photos/31515057/pexels-photo-31515057.jpeg",
+          "buttonText": "",
+          "popupText": "",
+          "choices": [
+            {
+              "text": "Yes, radiating towards the lower leg",
+              "goal": null,
+              "possibleChoice": "True"
+            },
+            {
+              "text": "No, only localized discomfort",
+              "goal": null,
+              "possibleChoice": "False"
+            }
+          ],
+          "videoUrls": {},
+          "fieldName": "forwardLumbar"
+        }
+      ]
+    },
+    {
+      "header": "Stage 2",
+      "steps": [
+        {
+          "selectedOption": "video_step",
+          "description": "Perform the movement as shown in the video. Then describe your sensations or feelings.",
+          "imageUrl": "https://images.pexels.com/photos/31515057/pexels-photo-31515057.jpeg",
+          "buttonText": "Mark if you are unable to bend and feel blocked",
+          "popupText": "I cannot perform a side bend, I have a blockage",
+          "choices": [],
+          "videoUrls": {
+            "pl-PL": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4",
+            "fr-FR": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4",
+            "en-EN": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4"
+          }
+        },
+        {
+          "selectedOption": "wheel_step",
+          "description": "",
+          "imageUrl": "",
+          "buttonText": "Mark if you are unable to bend and feel blocked",
+          "popupText": "I cannot perform a side bend, I have a blockage",
+          "choices": [],
+          "videoUrls": {},
+          "buttonGoal": null,
+          "upToTwoGoal": null,
+          "atLeastThreeGoal": null,
+          "wheelName": "rightLumbar"
+        }
+      ]
+    },
+    {
+      "header": "Stage 3",
+      "steps": [
+        {
+          "selectedOption": "video_step",
+          "description": "Perform the movement as shown in the video. Then describe your sensations or feelings.",
+          "imageUrl": "https://images.pexels.com/photos/31515057/pexels-photo-31515057.jpeg",
+          "buttonText": "Mark if you are unable to bend and feel blocked",
+          "popupText": "I cannot perform a side bend, I have a blockage",
+          "choices": [],
+          "videoUrls": {
+            "pl-PL": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4",
+            "fr-FR": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4",
+            "en-EN": "https://videos.pexels.com/video-files/33268656/14173072_2362_1440_25fps.mp4"
+          }
+        },
+        {
+          "selectedOption": "wheel_step",
+          "description": "",
+          "imageUrl": "",
+          "buttonText": "Mark if you are unable to bend and feel blocked",
+          "popupText": "I cannot perform a side bend, I have a blockage",
+          "choices": [],
+          "videoUrls": {},
+          "upToTwoGoal": null,
+          "atLeastThreeGoal": null,
+          "wheelName": "leftLumbar"
+        }
+      ]
+    }
+  ]
+}

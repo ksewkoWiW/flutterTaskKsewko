@@ -246,6 +246,4 @@ class _PainChoiceStepState extends State<PainChoiceStep> {
       ),
     );
   }
-  
-  Map<String, dynamic>? get selectedChoice => _selectedChoice;
 }

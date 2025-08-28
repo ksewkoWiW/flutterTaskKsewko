@@ -68,7 +68,7 @@ class OpenFormButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 200, // Set a specific width similar to continue button
+      width: 200,
       height: 56,
       child: ElevatedButton(
         onPressed: () {

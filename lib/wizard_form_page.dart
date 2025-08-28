@@ -22,9 +22,8 @@ class _WizardFormPageState extends State<WizardFormPage> {
   
   bool isLoading = true;
   
-  // Store user responses throughout the wizard
   Map<String, dynamic> userResponses = {
-    'userId': 'user123', // You can make this dynamic
+    'userId': 'user123',
     'timestamp': DateTime.now().toIso8601String(),
     'responses': {},
   };
@@ -65,23 +64,19 @@ class _WizardFormPageState extends State<WizardFormPage> {
   }
 
   void _nextStep() {
-    // Collect data from current step before moving
     _collectCurrentStepData();
     
     if (currentStepIndex < totalStepsInCurrentStage - 1) {
-      // Move to next step in current stage
       setState(() {
         currentStepIndex++;
       });
     } else {
-      // Move to next stage
       if (currentStageIndex < stages.length - 1) {
         setState(() {
           currentStageIndex++;
-          currentStepIndex = 0; // Reset to first step of new stage
+          currentStepIndex = 0;
         });
       } else {
-        // All stages completed
         _completeWizard();
       }
     }
@@ -105,13 +100,10 @@ class _WizardFormPageState extends State<WizardFormPage> {
       };
     }
     
-    // Store the specific response
     userResponses['responses'][stepKey][responseType] = responseValue;
   }
   
   void _collectCurrentStepData() {
-    // Data is now collected in real-time via callbacks
-    // This method ensures video steps are marked as completed
     final stepKey = 'stage_${currentStageIndex}_step_$currentStepIndex';
     final currentStageSteps = stages[currentStageIndex]['steps'] ?? [];
     final currentStep = currentStageSteps[currentStepIndex];
@@ -127,25 +119,6 @@ class _WizardFormPageState extends State<WizardFormPage> {
         'completed': true,
         'timestamp': DateTime.now().toIso8601String(),
       };
-    }
-  }
-
-  void _previousStep() {
-    if (currentStepIndex > 0) {
-      // Move to previous step in current stage
-      setState(() {
-        currentStepIndex--;
-      });
-    } else {
-      // Move to previous stage (last step of previous stage)
-      if (currentStageIndex > 0) {
-        setState(() {
-          currentStageIndex--;
-          // Set to last step of previous stage
-          final previousStageSteps = stages[currentStageIndex]['steps'] ?? [];
-          currentStepIndex = previousStageSteps.length - 1;
-        });
-      }
     }
   }
 
@@ -270,11 +243,6 @@ class _WizardFormPageState extends State<WizardFormPage> {
         ],
       ),
     );
-  }
-
-  bool _isLastStep() {
-    return currentStageIndex == stages.length - 1 && 
-           currentStepIndex == totalStepsInCurrentStage - 1;
   }
 
   Widget _buildCurrentStageStepper() {

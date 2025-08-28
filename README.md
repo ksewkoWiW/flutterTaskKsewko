@@ -1,17 +1,17 @@
-# Flutter Task - Ksawery Kondrat - Aplikacja Mobilna do Oceny Bólu Kręgosłupa
+# Flutter Task - Ksawery Kondrat - Aplikacja Mobilna Wizard Form
 
 Aplikacja mobilna stworzona w Flutter w ramach zadania rekrutacyjnego.
 
 ## Instrukcja uruchomienia
 
-### Wymagania wstępne
+#### Wymagania wstępne
 
 1. **Flutter SDK** (wersja 3.35.2 lub nowsza)
 2. **Git** 
 3. **Google Chrome** (do uruchomienia w przeglądarce)
 4. **Android Studio** (do uruchomienia na emulatorze Android)
 
-### Pobranie projektu
+#### Pobranie projektu
 
 ```bash
 # Sklonuj repozytorium
@@ -24,7 +24,7 @@ cd flutterTaskKsewko
 flutter pub get
 ```
 
-### Sprawdzenie konfiguracji Flutter
+#### Sprawdzenie konfiguracji Flutter
 
 ```bash
 # Sprawdź konfigurację Flutter
@@ -40,9 +40,9 @@ flutter devices
 flutter run -d chrome
 ```
 
-##  Uruchomienie na emulatorze Android
+##  Uruchomienie na emulatorze Android Studio
 
-### Utworzenie wirtualnego urządzenia (AVD)
+#### Utworzenie wirtualnego urządzenia (AVD)
 
 1. **W Android Studio:**
    - `Tools` → `Device Manager` (lub `AVD Manager`)
@@ -51,7 +51,7 @@ flutter run -d chrome
    - Wybierz najnowszą wersję Android (API 34+)
    - Nazwij urządzenie i kliknij `Finish`
 
-### Uruchomienie emulatora
+#### Uruchomienie emulatora
 ```bash
 # Sprawdź dostępne emulatory
 flutter emulators
@@ -62,7 +62,7 @@ flutter emulators --launch <emulator_id>
 # Kliknij przycisk ▶️ obok nazwy emulatora w Device Manager
 ```
 
-### Uruchomienie aplikacji
+#### Uruchomienie aplikacji
 ```bash
 # Sprawdź czy emulator jest widoczny
 flutter devices
@@ -75,7 +75,7 @@ flutter run -d <emulator-id>
 ## Testowanie aplikacji
 Napisałem kilka symboliczych testów :)
 
-### Uruchomienie testów
+#### Uruchomienie testów
 ```bash
 flutter test
 ```
@@ -111,7 +111,7 @@ Po zakończeniu wypełniania formularza w konsoli pojawi się JSON z odpowiedzia
 }
 ```
 
-**Autor:** Ksewko Kondrat
+**Autor:** Ksawery Kondrat
 **Data:** 28 sierpnia 2025  
 **Flutter:** 3.35.2  
-**Platformy:** Chrome Web, Android
+**Platformy:** Chrome Web, Android Studio Virtual Device
